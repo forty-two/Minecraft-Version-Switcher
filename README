@@ -1,1 +1,15 @@
--- Nothing to see here --
+Minecraft Version Selector stores a list of minecraft.jar files and their
+locations, and can copy these .jars into the system's minecraft gamefile path.
+
+This lets you switch quickly and easily between multiple Minecraft versions,
+whether they be from different updates or simply jars containing different mods.
+
+The interface should be fairly self-explanatory, further instructions are in the
+help menu of the program, under 'instructions'.
+
+Self contained packages for Windows and Mac can be found in the download section
+of the github page.
+
+Dependancies:
+    python 2.x (made with 2.7, should work with lower)
+    pyside
