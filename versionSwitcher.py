@@ -90,12 +90,12 @@ class MainWindow(QMainWindow, Ui_mainWindow):
             self.versionSelectionBox.addItem(key)
             
     def saveData(self):
-        outputFile = open("versionSelectorData.json", 'w')
+        outputFile = open("versionSwitcherData.json", 'w')
         outputFile.write(json.dumps(self.data, indent = 4))
         
     def loadData(self):
-        if os.path.isfile("versionSelectorData.json"):
-            self.data = json.loads(open("versionSelectorData.json").read())
+        if os.path.isfile("versionSwitcherData.json"):
+            self.data = json.loads(open("versionSwitcherData.json").read())
             
     def removeVersionPressed(self):
         version = self.versionSelectionBox.currentText()
